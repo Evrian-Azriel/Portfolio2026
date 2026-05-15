@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+body { font-family: 'Geist', sans-serif; background-color: #e9f0f4; color: #1a1a1a; margin: 0; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* Navbar */
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 30px 0; }
+.logo img { height: 32px; }
+.nav-links { display: flex; gap: 40px; font-weight: 500; list-style: none; }
+.nav-links a { text-decoration: none; color: inherit; }
+
+/* Hero Section */
+.hero { margin-top: 80px; margin-bottom: 60px; }
+.hero-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
+.hero-arrow { width: 40px; }
+.hero-desc { max-width: 400px; font-size: 14px; color: #555; text-align: right; line-height: 1.6; }
+
+.hero-title {
+    font-family: 'ITC Avant Garde Std', 'Inter', sans-serif; 
+    font-size: clamp(40px, 6.3vw, 150px);
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 0.9;
+    white-space: nowrap;
+    width: 100%;
+    margin-top: 5%;
+}
+
+/* Works Grid */
+.works { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 20px; }
+.section-label { font-size: 14px; font-weight: 600; margin-top: 40px; }
+
+/* Menyelaraskan teks dengan lebar gambar yang diperkecil */
+.work-item.social-media { 
+    grid-column: 2; 
+    grid-row: 1; 
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Menyelaraskan seluruh item ke kanan */
+}
+
+.work-item.social-media .work-image,
+.work-item.social-media .work-info {
+    width: 85%; /* Lebar yang sama antara gambar dan teks info */
+}
+
+.work-item.posters { grid-column: 1; grid-row: 2; }
+.work-item.uiux { grid-column: 2; grid-row: 2; }
+
+.work-image { background: #d1d9e0; border-radius: 4px; overflow: hidden; margin-bottom: 12px; }
+.work-image img { width: 100%; height: auto; display: block; }
+
+.work-info { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    font-size: 12px; 
+    font-weight: 700; 
+    text-transform: uppercase;
+}
+
+.explore { font-weight: 500; text-transform: none; text-decoration: none; color: inherit; }
+
+/* Footer */
+.footer { margin-top: 150px; padding-bottom: 100px; }
+.footer-content { display: flex; justify-content: space-between; align-items: flex-start; gap: 50px; }
+.footer-left { flex: 1; }
+.large-footer-logo { width: 180px; height: auto; }
+.footer-right { flex: 1.2; }
+.footer-heading { font-size: 56px; font-weight: 700; line-height: 1.1; margin-bottom: 60px; letter-spacing: -1px; }
+.contact-grid { display: flex; flex-direction: column; }
+.contact-item { display: grid; grid-template-columns: 200px 1fr; padding: 20px 0; border-top: 1px solid #d1d9e0; }
+.contact-label { font-size: 12px; font-weight: 600; color: #555; text-transform: uppercase; }
+.contact-value { font-size: 16px; font-weight: 500; text-decoration: none; color: #1a1a1a; }
+.social-group { display: flex; flex-direction: column; gap: 5px; }

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+body { font-family: 'Geist', sans-serif; background-color: #e9f0f4; color: #1a1a1a; margin: 0; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* Navbar */
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
+.logo img { height: 24px; width: auto; }
+.nav-links { list-style: none; padding: 0; margin: 0; }
+.nav-links a { text-decoration: none; color: inherit; font-weight: 600; font-size: 18px; }
+
+/* Hero Section */
+.hero-section { padding: 60px 0 20px; text-align: center; }
+.page-title { font-size: 100px; font-weight: 800; margin: 0; letter-spacing: -3px; }
+
+/* Status Container (Coming Soon) */
+.status-container {
+    height: 40vh; /* Memberikan ruang vertikal yang cukup */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.coming-soon-text {
+    font-size: 120px;
+    font-weight: 900;
+    color: #d1d9e0; /* Warna abu-abu muda sesuai gambar */
+    letter-spacing: -5px;
+    margin: 0;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+/* Footer */
+.footer { margin-top: 150px; padding-bottom: 100px; }
+.footer-content { display: flex; justify-content: space-between; align-items: flex-start; gap: 50px; }
+.footer-left { flex: 1; }
+.large-footer-logo { width: 180px; height: auto; }
+.footer-right { flex: 1.2; }
+.footer-heading { font-size: 56px; font-weight: 700; line-height: 1.1; margin-bottom: 60px; letter-spacing: -1px; }
+.contact-grid { display: flex; flex-direction: column; }
+.contact-item { display: grid; grid-template-columns: 200px 1fr; padding: 20px 0; border-top: 1px solid #d1d9e0; }
+.contact-label { font-size: 12px; font-weight: 600; color: #555; text-transform: uppercase; }
+.contact-value { font-size: 16px; font-weight: 500; text-decoration: none; color: #1a1a1a; }
+.social-group { display: flex; flex-direction: column; gap: 5px; }
